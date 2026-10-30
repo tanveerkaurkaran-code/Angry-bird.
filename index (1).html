@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Sardar Ji 💗</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 18px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe4ee, #eee4ff);
+    color: #573b55;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 420px;
+    margin: 25px auto;
+}
+
+h1 {
+    color: #df4d85;
+    font-size: 29px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 22px;
+    box-shadow: 0 5px 20px #00000012;
+    line-height: 1.8;
+    margin: 18px 0;
+}
+
+.penguin {
+    font-size: 80px;
+    margin: 15px;
+}
+
+.detective {
+    font-size: 75px;
+    margin: 15px;
+}
+
+button {
+    background: #ff78a5;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 14px 20px;
+    margin: 9px 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.page {
+    display: none;
+    animation: appear 0.4s ease;
+}
+
+#page1 {
+    display: block;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message {
+    display: none;
+    background: #fff0f6;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 12px;
+    line-height: 1.7;
+}
+
+.file {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 2px solid #f5b9d2;
+    border-radius: 15px;
+    background: #fff5fa;
+    color: #75415f;
+    font-size: 15px;
+    text-align: left;
+}
+
+.navigation {
+    margin-top: 22px;
+}
+.memory-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 18px;
+    margin-top: 12px;
+    box-shadow: 0 5px 15px #00000020;
+}
+
+.memory-video {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 18px;
+    margin-top: 12px;
+}
+.memory-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 18px;
+    margin-top: 12px;
+    box-shadow: 0 5px 15px #00000020;
+}
+
+.memory-video {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 18px;
+    margin-top: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SLIDE 1: EMERGENCY ROOM -->
+<div class="container page" id="page1">
+
+    <p>🚨 EMERGENCY ALERT 🚨</p>
+
+    <div class="penguin">🐧💗</div>
+
+    <h1>Operation:<br>Make My Sardar Smile</h1>
+
+    <div class="card">
+        <h3>🚑 Emergency Report</h3>
+
+        <p>Patient: My Favourite Human 🧸</p>
+        <p>Current Condition: Angry 😤</p>
+        <p>Smile Level: Missing 😭</p>
+        <p>Treatment: Unlimited Love 💗</p>
+    </div>
+
+    <p>Oye Sardar Ji, ek minute suno na! 🥹</p>
+
+    <button onclick="startTreatment()">
+        🚑 Start Treatment
+    </button>
+
+    <button onclick="showMessage()">
+        😤 Still Angry
+    </button>
+
+    <div class="message" id="treatmentMessage"></div>
+
+    <div class="navigation">
+        <button onclick="showPage(2)">
+            🔐 Next Surprise ➜
+        </button>
+    </div>
+</div>
+
+
+<!-- SLIDE 2: SECRET FILES -->
+<div class="container page" id="page2">
+
+    <p>🔐 CLASSIFIED INFORMATION 🔐</p>
+
+    <div class="detective">🕵🏻‍♀️🔍</div>
+
+    <h1>Operation:<br>Sardar Ji</h1>
+
+    <div class="card">
+        <p><b>📂 CASE NO. 001</b></p>
+        <p>Investigator: Your Girlfriend 🕵🏻‍♀️</p>
+        <p>Suspect: One handsome boy 😤</p>
+        <p>Case Status: UNDER INVESTIGATION 🚨</p>
+
+        <hr>
+
+        <p>Oye Sardar Ji! 🤨</p>
+        <p>Kuch suspicious evidence mila hai!</p>
+        <p>Files kholo agar himmat hai toh! 😂💗</p>
+    </div>
+
+    <button class="file" onclick="openFile(1)">
+        📁 FILE 01 — Evidence of Cuteness 🥹
+    </button>
+
+    <div class="message" id="file1">
+        <h3>🔍 EVIDENCE FOUND</h3>
+        Suspect is dangerously handsome. 🤭💗
+        <br><br>
+        Investigator keeps smiling like an idiot
+        while thinking about him. 😂
+        <br><br>
+        <b>Conclusion:</b>
+        Too much cuteness detected! 💗
+        <br><br>
+
+<img src="cute.jpg"
+     alt="Cute memory"
+     class="memory-photo">
+    </div>
+
+    <button class="file" onclick="openFile(2)">
+        📁 FILE 02 — Classified Love Secrets 💌
+    </button>
+
+    <div class="message" id="file2">
+        <h3>🔐 STRICTLY CONFIDENTIAL</h3>
+
+        Ek ladki hai jo tumse lad bhi leti hai...
+        <br><br>
+        Tumhe tang bhi karti hai...
+        <br><br>
+        Lekin tumhari ek chhoti si smile ke liye
+        poori website bana deti hai. 🥹🫶🏻
+        <br><br>
+        <b>Suspect's identity:</b>
+        Tumhari favourite troublemaker! 🤭💗
+        <br><br>
+
+<img src="couple.jpg"
+     alt="Our memory"
+     class="memory-photo">
+    </div>
+
+    <button class="file" onclick="openFile(3)">
+        📁 FILE 03 — The Final Evidence 😂
+    </button>
+
+    <div class="message" id="file3">
+        <h3>🚨 CASE CLOSED! 🚨</h3>
+
+        FINAL VERDICT:
+        <br><br>
+        This boy is VERY loved. 💗
+        <br><br>
+        Sentence: Unlimited virtual hugs,
+        whenever he wants them. 🫂
+        <br><br>
+        Appeal allowed. Attitude optional. 😂
+        <br><br>
+
+<p>🫂 Your Virtual Hug Is Here!</p>
+
+<video class="memory-video" controls playsinline>
+    <source src="hug.mp4" type="video/mp4">
+    Your browser does not support this video.
+</video>
+
+<p>Sending you the biggest hug, Sardar Ji! 💗🐧</p>
+    </div>
+
+    <div class="navigation">
+        <button onclick="showPage(1)">
+            ⬅️ Previous
+        </button>
+
+      <div class="navigation">
+    <button onclick="showPage(1)">
+        ⬅️ Previous
+    </button>
+
+    <button onclick="showPage(3)">
+        🐧 Our Memories ➜
+    </button>
+</div>
+    </div>
+
+    <p>Made with lots of love 💗🐧</p>
+</div>
+
+
+<script>
+function showPage(number) {
+document.querySelectorAll(".page").forEach(function(page) {
+page.style.display = "none";
+});
+
+document.getElementById("page" + number).style.display = "block";
+
+window.scrollTo(0, 0);
+
+if (typeof changeSong === "function") {
+    changeSong(number);
+}
+
+}
+
+function startTreatment() {
+    document.getElementById("treatmentMessage").style.display = "block";
+
+    document.getElementById("treatmentMessage").innerHTML =
+        "🚑 Treatment started! 🐧💗 Prescription: one smile, a little laughter, and unlimited love! 🫶🏻";
+}
+
+function showMessage() {
+    document.getElementById("treatmentMessage").style.display = "block";
+
+    document.getElementById("treatmentMessage").innerHTML =
+        "Ohooo Sardar Ji! 😂 Doctor ne abhi discharge bhi nahi kiya! 💗 Ek chhoti si smile toh banti hai na? 🥹";
+}
+
+function openFile(number) {
+    var selected = document.getElementById("file" + number);
+
+    if (selected.style.display === "block") {
+        selected.style.display = "none";
+    } else {
+        selected.style.display = "block";
+    }
+}
+</script>
+<!-- SLIDE 3: LITTLE LOVE MUSEUM -->
+
+<div class="container page" id="page3">
+
+    <p>💌 A LITTLE TRIP DOWN MEMORY LANE 💌</p>
+
+    <div style="font-size:75px; margin:15px;">
+        🐧💗🐧
+    </div>
+
+    <h1>Our Little Love Museum</h1>
+
+    <div class="card">
+        <h3>🖼️ MEMORY NO. 01</h3>
+
+        <p>
+            Some moments become memories...
+            and some people become your favourite
+            part of life. 🥹💗
+        </p>
+
+        <img src="couple.jpg"
+             alt="Our special memory"
+             class="memory-photo">
+
+        <p><b>My favourite person: YOU! 🫶🏻</b></p>
+    </div>
+
+    <div class="card">
+        <h3>💌 MEMORY NO. 02</h3>
+
+        <p>
+            If I could save one feeling forever,
+            it would be the happiness I feel with you. 💗
+        </p>
+
+        <img src="cute.jpg"
+             alt="A cute memory"
+             class="memory-photo">
+
+        <p>More memories with you, please! 🥹✨</p>
+    </div>
+
+    <div class="card">
+        <h3>🫂 ONE LAST THING...</h3>
+
+        <p>
+            No matter how much we tease each other,
+            you will always be someone very special to me. 💗
+        </p>
+
+        <p>Sending you the biggest virtual hug! 🫂🐧</p>
+    </div>
+
+    <div class="navigation">
+        <button onclick="showPage(2)">
+            ⬅️ Previous
+        </button>
+
+        <button onclick="showPage(4)">
+            💌 Open Love Letter ➜
+        </button>
+    </div>
+
+</div>
+<!-- SLIDE 3: OUR LITTLE LOVE MUSEUM --><div class="container page" id="page3"><p>💌 A LITTLE TRIP DOWN MEMORY LANE 💌</p>
+
+<h1>Our Little Love Museum 🐧💗</h1>
+
+<p>Every picture has a story, and every story has YOU. 🥹</p>
+
+<!-- PHOTO 1 -->
+<div class="card">
+    <h3>📸 MEMORY NO. 01</h3>
+
+    <img src="photo1.jpg"
+         alt="Our First Memory"
+         class="memory-photo">
+
+    <p>One picture, a thousand feelings. 💗</p>
+</div>
+
+<!-- PHOTO 2 -->
+<div class="card">
+    <h3>🫶🏻 MEMORY NO. 02</h3>
+
+    <img src="photo2.jpg"
+         alt="My Favourite Person"
+         class="memory-photo">
+
+    <p>My favourite person, always and forever. 🥹💗</p>
+</div>
+
+<!-- PHOTO 3 -->
+<div class="card">
+    <h3>🐧 MEMORY NO. 03</h3>
+
+    <img src="photo3.jpg"
+         alt="Our Cute Memory"
+         class="memory-photo">
+
+    <p>Us being us is my favourite thing. ✨</p>
+</div>
+
+<!-- PHOTO 4 -->
+<div class="card">
+    <h3>💌 MEMORY NO. 04</h3>
+
+    <img src="photo4.jpg"
+         alt="A Special Memory"
+         class="memory-photo">
+
+    <p>And I would choose you again. Every time. 💗</p>
+</div>
+
+<div class="card">
+    <h2>🫂 One More Hug?</h2>
+    <p>Sending you the biggest virtual hug, Sardar Ji! 🐧💗</p>
+</div>
+
+<div class="navigation">
+    <button onclick="showPage(2)">
+        ⬅️ Previous
+    </button>
+
+    <button onclick="showPage(4)">
+        💌 Open Love Letter ➜
+    </button>
+</div>
+
+</div>
+
+<!-- SLIDE 4: LOVE LETTER -->
+
+<div class="container page" id="page4">
+
+    <p>💌 A LITTLE LETTER FOR YOU 💌</p>
+
+    <div style="font-size:75px; margin:15px;">
+        🐧💗💌
+    </div>
+
+    <h1>Dear Sardar Ji...</h1>
+
+    <div class="card">
+
+        <h3>💗 A Letter From Your Girl</h3>
+
+        <p>
+            Oye Chucha! 🥹🫶🏻
+        </p>
+
+        <p>
+            Pata hai, kabhi-kabhi hum dono lad lete hain,
+            ek doosre ko tang karte hain aur gusse bhi ho jaate hain. 🥺
+        </p>
+
+        <p>
+            Lekin tum mere liye bahut special ho.
+            Tumhari smile mere face par bhi smile le aati hai. 💗
+        </p>
+
+        <p>
+            Agar meri kisi baat se tumhara dil dukha ho,
+            toh I'm genuinely sorry. 🥹
+            Mera intention kabhi tumhe hurt karna nahi hota.
+        </p>
+
+        <p>
+            Main chahti hoon ki hum ek doosre ko samjhein,
+            pyaar se baat karein aur milkar problems solve karein. 🫶🏻
+        </p>
+
+        <p>
+            I'm not asking you to stop feeling angry instantly.
+            Bas jab tum ready ho, hum pyaar se baat kar lein. 💌
+        </p>
+
+        <hr>
+
+        <h3>One Last Thing... 💗</h3>
+
+        <p>
+            You're my favourite Sardar,
+            my favourite troublemaker,
+            and someone I care about a lot. 🐧💗
+        </p>
+
+        <p><b>Lots of love, always. 💋🫂</b></p>
+
+    </div>
+
+    <div class="navigation">
+
+        <button onclick="showPage(3)">
+            ⬅️ Previous
+        </button>
+
+        <button onclick="showPage(5)">
+            🎮 Next Surprise ➜
+        </button>
+
+       </div>
+    </div>
+<!-- SLIDE 5: SARDAR JI VS GIRLFRIEND --><div class="container page" id="page5" style="display:none;"><p>🎮 THE ULTIMATE LOVE GAME 🎮</p>
+
+<div style="font-size:70px; margin:15px;">
+    🐧💗🐧
+</div>
+
+<h1>Sardar Ji vs Girlfriend 😂</h1>
+
+<p>Let's see how well you know your girlfriend! 🫶🏻</p>
+
+<div class="card" id="gameCard">
+
+    <h2>💌 Challenge No. 1</h2>
+
+    <p><b>Who loves whom more? 👀</b></p>
+
+    <button onclick="gameAnswer('wrong')">
+        Obviously, ME 😎
+    </button>
+
+    <button onclick="gameAnswer('right')">
+        My Girlfriend! 🥹💗
+    </button>
+
+    <p id="gameResult"></p>
+
+</div>
+
+<div class="card">
+
+    <h3>🏆 Your Special Reward</h3>
+
+    <p>
+        Congratulations, Sardar Ji! 🎉
+        You have officially won unlimited hugs,
+        kisses and girlfriend privileges! 🫂💋
+    </p>
+
+</div>
+
+<div class="navigation">
+
+    <button onclick="showPage(4)">
+        ⬅️ Previous
+    </button>
+
+    <button onclick="showPage(6)">
+        🎁 Final Surprise ➜
+    </button>
+
+</div>
+
+</div><script>
+function gameAnswer(answer) {
+    const result = document.getElementById("gameResult");
+
+    if (answer === "right") {
+        result.innerHTML =
+            "Correct answer! 🥹💗 You know your girl so well! +1000 love points! 🏆";
+    } else {
+        result.innerHTML =
+            "WRONG! 😂 Try again, Sardar Ji! Your girlfriend loves you more! 🐧💗";
+    }
+}
+</script>
+
+</div>
+<!-- SLIDE 6: THE FINAL SURPRISE --><div class="container page" id="page6" style="display:none;"><p>🎁 ONE LAST SURPRISE FOR YOU 🎁</p>
+
+<div style="font-size:75px; margin:20px;">
+    🐧💗🐧
+</div>
+
+<h1>Open Your Little Surprise! 💌</h1>
+
+<p>
+    Sardar Ji, there's something special
+    waiting just for you. 🥹💗
+</p>
+
+<div class="card">
+
+    <h2>💌 A Secret Message</h2>
+
+    <button onclick="revealSurprise()">
+        💗 Open My Heart 💗
+    </button>
+
+    <div id="secretMessage" style="display:none;">
+
+        <h2>My Favourite Person 🫶🏻</h2>
+
+        <p>
+            If I could choose my favourite person
+            all over again, I would still choose you. 💗
+        </p>
+
+        <p>
+            We may have our little fights,
+            misunderstandings and difficult days,
+            but you mean so much to me. 🥹
+        </p>
+
+        <p>
+            I don't expect us to be perfect.
+            I just hope we keep understanding each other,
+            choosing kindness and making beautiful memories
+            together. 🐧💗
+        </p>
+
+        <h2>Sending you the biggest hug! 🫂</h2>
+
+        <p>Forever your penguin. 🐧💌</p>
+
+    </div>
+
+</div>
+
+<div class="navigation">
+
+    <button onclick="showPage(5)">
+        ⬅️ Previous
+    </button>
+
+    <button onclick="showPage(1)">
+        🔄 Start Again
+    </button>
+
+</div>
+
+</div><script>
+function revealSurprise() {
+    document.getElementById("secretMessage").style.display = "block";
+}
+</script>
+<!-- COMMON MUSIC PLAYER --><div id="musicPlayer" style="
+    position:fixed;
+    bottom:12px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:9999;
+    background:#ffe4ef;
+    padding:6px 10px;
+    border-radius:18px;
+    box-shadow:0 3px 12px #d88ca8;
+    text-align:center;
+    width:90%;
+    max-width:300px;
+    box-sizing:border-box;
+">
+    🎶 Our Love Songs 💗
+</div>
+
+<audio id="loveSong" controls preload="none" style="width:220px;">
+    <source id="songSource" src="romantic.mp3" type="audio/mpeg">
+</audio>
+
+</div><script>
+const slideSongs = {
+    1: "heartbeat.mp3",
+    2: "detective.mp3",
+    3: "memories.mp3",
+    4: "romantic.mp3",
+    5: "correct.mp3",
+    6: "magic.mp3"
+};
+
+function changeSong(slideNumber) {
+    const audio = document.getElementById("loveSong");
+    const source = document.getElementById("songSource");
+    const newSong = slideSongs[slideNumber];
+
+    if (!newSong || source.getAttribute("src") === newSong) {
+        return;
+    }
+
+    audio.pause();
+    audio.currentTime = 0;
+    source.setAttribute("src", newSong);
+    audio.load();
+    audio.play().catch(function() {
+    console.log("Tap Play to start the music.");
+});
+}
+</script>
+</body>
+</html>
